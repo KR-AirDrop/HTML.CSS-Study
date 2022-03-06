@@ -108,3 +108,18 @@
   width: auto;
   height: auto;
 }
+
+.navbar li {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar > li > a {
+  color: black;
+  font-size: 16px;
+  text-decoration-line: none;
+}

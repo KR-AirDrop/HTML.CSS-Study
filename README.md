@@ -9,6 +9,7 @@
       align-items: center;(세로정렬)<br/>
       justify-content: center;(가로정렬)</P>
   <strong>homework_1 확인 </strong>
-  <li>    </li>
+  <li> selector문법</li>
+  <p> navbar > li : 직계자식만, navbar li : ~ 안에 있는 모든 자식</p>
   </ul>
 </div>
