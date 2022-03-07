@@ -1,9 +1,3 @@
-<style>
-  li {
-    font-weight : bold;
-  }
-  </style>
-
 <div>
   <h1> HTML, CSS 메모 </h1>
   <ul>
@@ -13,8 +7,8 @@
     <li>div 내부 컨텐츠 가운데 정렬</li>
     <p>  display: flex;<br>
       align-items: center;(세로정렬)<br>
-      justify-content: center;(가로정렬)</P>
-  <strong>homework_1 확인 </strong>
+      justify-content: center;(가로정렬)<br>
+      homework_1 확인 <p>
   <li> selector문법</li>
   <p> navbar > li : 직계자식만, navbar li : ~ 안에 있는 모든 자식, input[속성명=속성값] : ~ 속성을 가진 것만</p>
   <li> margin collapse 현상 </li>
@@ -32,7 +26,7 @@
   <p> form에 action과 method로 어떤 경로로 어떤 요청(get, post)을 보낼지 정할 수 있다.<br>
    input type도 정말 다양하게 있고, name으로 서버에 전달. select, option태그로 선택박스 생성가능. 등등... 많으니 필요할 때 검색! </p>
    <li> float </li>
-   <p> float 해제시, 부모태그에서 가상요소(::after)를 생성하고 
+   <p> float 해제시, 부모태그에서 가상요소(::after)를 생성하고<br>
    content:'';<br>
    display:block;<br>
    clear:both;<br>
