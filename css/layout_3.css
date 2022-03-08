@@ -1,0 +1,8 @@
+.flex-container {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
