@@ -87,3 +87,9 @@ object-fit: cover; 옵션 사용하면 가능
 media-quary 문법 사용
 
 1200px / 992px / 768px / 576px ( ex. 1200 태블릿, 768 모바일)
+
+- font awesome에서 아이콘 사용 가능
+
+- 애니메이션 주기
+
+1. 시작스타일, 최종스타일 만들기 2. 언제 최종스타일 되는지 (대부분 hover?, 아니면 JS사용) 3. transition 주기

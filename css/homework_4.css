@@ -1,10 +1,10 @@
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .box {
-  width: 200px;
+  width: 25%;
   height: 200px;
   margin: 20px;
   background-color: beige;
@@ -12,12 +12,15 @@
 
 @media screen and (max-width: 1200px) {
   .container {
-    flex-basis: 49%;
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
+  .box {
+    width: 100%;
   }
 }
