@@ -134,8 +134,9 @@ HTML에 숨겨진 요소들. input에 css를 적용할 떄 사용 가능.
 
 - nesting 문법 : 
 
-<img width="208" alt="스크린샷 2022-03-10 오후 6 28 23" src="https://user-images.githubusercontent.com/71241711/157632139-a5f08df3-5670-4b57-9293-615f229048ef.png">
 이런 식으로 사용 가능.
+
+<img width="208" alt="스크린샷 2022-03-10 오후 6 28 23" src="https://user-images.githubusercontent.com/71241711/157632139-a5f08df3-5670-4b57-9293-615f229048ef.png">
 
 - @extend 문법
 
