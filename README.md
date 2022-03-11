@@ -158,4 +158,16 @@ HTML에 숨겨진 요소들. input에 css를 적용할 떄 사용 가능.
 
 서브 파일은 컴파일 할 필요가 없기 떄문에, 파일명을 _이름 이런식으로 짜면 자동으로 컴파일 되지 않는다.
 
+- video, audio 사용
 
+video 태그, source 태그를 안에 넣어서 호환성 좋게 만들 수 있다(이거 안되면 다음걸로 틀어주세요~). controls(필요), autoplay muted, preload:metadata, poster(썸네일), loop 등등 여러 속성이 있다.
+
+audio도 거의 똑같음.
+
+- transform, animation
+
+복잡한 애니메이션은 @keyframes
+
+<img width="321" alt="스크린샷 2022-03-11 오전 11 11 08" src="https://user-images.githubusercontent.com/71241711/157788758-8d251cfd-c986-4357-a1fe-e0aa7339a83a.png">
+
+( margin 이런거 바꿔서 만드는 것보다 transform으로 만드는게 성능이 좋다. )
