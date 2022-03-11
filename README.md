@@ -1,4 +1,4 @@
-# HTML, CSS 메모
+# HTML, CSS 메모 (코딩애플 강의)
 
 ## 기초모듈
 
@@ -171,3 +171,21 @@ audio도 거의 똑같음.
 <img width="321" alt="스크린샷 2022-03-11 오전 11 11 08" src="https://user-images.githubusercontent.com/71241711/157788758-8d251cfd-c986-4357-a1fe-e0aa7339a83a.png">
 
 ( margin 이런거 바꿔서 만드는 것보다 transform으로 만드는게 성능이 좋다. )
+
+- display : grid 
+
+columns, rows 로 모눈종이처럼 배열 가능, fr단위(비율?) 쓰기 편함, grid-gap 사이 간격
+
+<img width="814" alt="스크린샷 2022-03-11 오후 12 35 38" src="https://user-images.githubusercontent.com/71241711/157797210-65ccf668-8d0b-40b3-ac0b-29041ab87cad.png">
+
+위처럼 쓰거나, grid-area로 이름 지어주고,
+
+<img width="866" alt="스크린샷 2022-03-11 오후 12 40 34" src="https://user-images.githubusercontent.com/71241711/157797683-3ffb6193-47bf-4e17-890b-32a2eac7a68d.png">
+
+이렇게 직관적으로 쓸 수도 있다. (사각형 맞춰야됨)
+
+- position: sticky (나름 신기술?)
+
+조건부 fixed, 부모박스 넘어서면 해제.
+
+### 참고 사이트 : <a href="apple.com/apple-tv-4k">apple.com/apple-tv-4k</a>
