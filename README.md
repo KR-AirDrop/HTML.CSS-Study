@@ -1,4 +1,4 @@
-# HTML, CSS 메모
+# HTML, CSS 메모 (코딩애플 강의)
 
 ## 기초모듈
 
@@ -102,11 +102,11 @@ media-quary 문법 사용
 
 반응형 웹을 만들 때 매우 편리 (container, row, col - 조건식)
 
-- 좋은 코드의 원칙
+### 좋은 코드의 원칙
 
-### 1. 나중에 수정/관리가 쉽다.
+1. 나중에 수정/관리가 쉽다.
 
-### 2. 확장성
+2. 확장성
 
 ## 고급모듈
 
@@ -126,10 +126,66 @@ HTML에 숨겨진 요소들. input에 css를 적용할 떄 사용 가능.
 
 ## Sass 용도 및 문법
 
-scss파일을 css파일로 컴파일해서 사용. map파일은 크롬 개발자도구 디버깅용.
+- scss파일을 css파일로 컴파일해서 사용. map파일은 크롬 개발자도구 디버깅용.
 
-어려운 단어 기억, 변수 사용가능 ( $변수 = 어려운단어; ) > 수정과 관리가 쉬워짐, 사칙연산 가능, css로도 가능하지만 쬐끔 더 귀찮음
+- 어려운 단어 기억, 변수 사용가능 ( $변수 = 어려운단어; ) > 수정과 관리가 쉬워짐, 사칙연산 가능, css로도 가능하지만 쬐끔 더 귀찮음
 
-scss, sass 차이? : 대괄호 있고 없고
+- scss, sass 차이? : 대괄호 있고 없고
 
-nesting 문법 :
+- nesting 문법 : 
+
+이런 식으로 사용 가능.
+
+<img width="208" alt="스크린샷 2022-03-10 오후 6 28 23" src="https://user-images.githubusercontent.com/71241711/157632139-a5f08df3-5670-4b57-9293-615f229048ef.png">
+
+- @extend 문법
+
+중복되는 css 변수처럼 저장해서 사용. 
+
+<img width="189" alt="스크린샷 2022-03-10 오후 6 34 21" src="https://user-images.githubusercontent.com/71241711/157633306-04509708-aee0-4076-bb6e-cda801f2fd21.png">
+
+일반 클래스도 @extend로 사용 가능한데 %클래스는 임시 클래스로 따로 컴파일 되지않음.
+
+- @mixin, @include
+
+함수처럼 긴 코드를 한 단어로 축약.  $파라미터를 사용해서 가변적으로 사용할 수도 있다.
+
+- @use
+
+다른 파일의 내용을 가져올 때 사용. @use '경로';
+
+다른 파일의 변수나 mixin 사용 할 떄는 파일명.을 붙이고 사용.
+
+서브 파일은 컴파일 할 필요가 없기 떄문에, 파일명을 _이름 이런식으로 짜면 자동으로 컴파일 되지 않는다.
+
+- video, audio 사용
+
+video 태그, source 태그를 안에 넣어서 호환성 좋게 만들 수 있다(이거 안되면 다음걸로 틀어주세요~). controls(필요), autoplay muted, preload:metadata, poster(썸네일), loop 등등 여러 속성이 있다.
+
+audio도 거의 똑같음.
+
+- transform, animation
+
+복잡한 애니메이션은 @keyframes
+
+<img width="321" alt="스크린샷 2022-03-11 오전 11 11 08" src="https://user-images.githubusercontent.com/71241711/157788758-8d251cfd-c986-4357-a1fe-e0aa7339a83a.png">
+
+( margin 이런거 바꿔서 만드는 것보다 transform으로 만드는게 성능이 좋다. )
+
+- display : grid 
+
+columns, rows 로 모눈종이처럼 배열 가능, fr단위(비율?) 쓰기 편함, grid-gap 사이 간격
+
+<img width="814" alt="스크린샷 2022-03-11 오후 12 35 38" src="https://user-images.githubusercontent.com/71241711/157797210-65ccf668-8d0b-40b3-ac0b-29041ab87cad.png">
+
+위처럼 쓰거나, grid-area로 이름 지어주고,
+
+<img width="866" alt="스크린샷 2022-03-11 오후 12 40 34" src="https://user-images.githubusercontent.com/71241711/157797683-3ffb6193-47bf-4e17-890b-32a2eac7a68d.png">
+
+이렇게 직관적으로 쓸 수도 있다. (사각형 맞춰야됨)
+
+- position: sticky (나름 신기술?)
+
+조건부 fixed, 부모박스 넘어서면 해제.
+
+### 참고 사이트 : <a href="apple.com/apple-tv-4k">apple.com/apple-tv-4k</a>
