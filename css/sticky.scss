@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.grey {
+  background-color: lightgrey;
+  height: 2000px;
+  margin-top: 500px;
+  padding: 100px;
+}
+
+.image {
+  float: right;
+  width: 400px;
+  position: sticky;
+  top: 100px;
+}
+
+.text {
+  float: left;
+  width: 500px;
+  font-size: 20px;
+}

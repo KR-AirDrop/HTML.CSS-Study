@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  height: 700px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 1fr;
+  grid-template-areas:
+    "nav nav nav nav nav"
+    "side main main main main";
+}
+
+.grid-container div {
+  border: 1px solid grey;
+}
+
+.grid-nav {
+  grid-area: nav;
+}
+
+.grid-side {
+  grid-area: side;
+}
+
+.grid-main {
+  grid-area: main;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    height: 700px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 1fr;
+    grid-template-areas:
+      "nav"
+      "side"
+      "main";
+  }
+}

@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+}
+
+.list li {
+  list-style: none;
+  width: 300px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.list li:hover {
+  background-color: #1f64fa;
+  color: white;
+}
+
+.ani-button {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background-color: skyblue;
+}
+
+.ani-button:hover {
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  15% {
+    transform: rotateZ(10deg);
+  }
+  30% {
+    transform: rotateZ(-10deg);
+  }
+  50% {
+    transform: rotateZ(5deg);
+  }
+  75% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  15% {
+    transform: rotateZ(10deg);
+  }
+  30% {
+    transform: rotateZ(-10deg);
+  }
+  50% {
+    transform: rotateZ(5deg);
+  }
+  75% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.ani-plus {
+  margin: 50px;
+  padding: 0;
+  display: inline-block;
+}
+
+.ani-plus:hover {
+  -webkit-animation-name: plus;
+          animation-name: plus;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes plus {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    transform: rotateZ(45deg) scale(3);
+  }
+}
+
+@keyframes plus {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  20% {
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    transform: rotateZ(45deg) scale(3);
+  }
+}
+.ani-menu {
+  width: 200px;
+  height: 400px;
+  background-color: black;
+  color: white;
+  padding: 30px 10px;
+  transform: translateX(-100px);
+  transition: all 1s;
+  text-align: end;
+}
+
+.ani-menu:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+.ani-menu:hover p {
+  -webkit-animation-name: item;
+          animation-name: item;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes item {
+  0% {
+    transform: translate(-150);
+  }
+  50% {
+    transform: translateX(70px) skew(-45deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes item {
+  0% {
+    transform: translate(-150);
+  }
+  50% {
+    transform: translateX(70px) skew(-45deg);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}/*# sourceMappingURL=prac_sass.css.map */
